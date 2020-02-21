@@ -1,0 +1,82 @@
+﻿<!--Prototype 1 is a solution file for Pokugara project. Pokugara is an online tool intended to assist individuals in making reservations,for accomodation online.-->
+<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="SiteMaster.master.vb" Inherits="Prototype_1.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>POKUGARA</title>
+    <!-- My stylesheet and javascript files-->
+    <link rel="stylesheet" type="text/css" href="Style1.css" />
+    <link rel="stylesheet" type="text/css" href="owl.carousel.css" />
+    <link rel="stylesheet" type="text/css" href="owl.theme.default.min.css" />
+    <link rel="stylesheet" type="text/css" href="owl.carousel.min.css" />
+    <script src="jquery.min.js"></script>
+    <script src="owl.carousel.min.js"></script>
+
+
+  <!--  Initializing owl-carousel slider-->      
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+             });
+        });
+    </script>
+</head>
+
+<body>
+    <form id="frm1" runat="server">
+<!--Navigation section of the page-->
+        <div class="fixed-top">
+            <asp:Table CssClass="tabs" runat="server" Width="100%">
+                <asp:TableRow>
+
+                    <asp:TableCell>
+                        <span><a href="WebForm1.aspx">Home</a></span>
+                    </asp:TableCell>
+                    <asp:TableCell>
+                       <span><a href="Our Commitment.aspx">Our Work</a></span>
+                    </asp:TableCell>
+                    <asp:TableCell>
+                       <span><a href="connection.php">Accomodation</a></span>
+                    </asp:TableCell>
+                    <asp:TableCell>
+                       <span><a href="Work.aspx">Our Commitment</a></span>
+                    </asp:TableCell>
+                </asp:TableRow>
+            </asp:Table>
+        </div>
+
+    <!--Content to appear-->    
+        <asp:ContentPlaceHolder ID="BodyContent" runat="server">
+        </asp:ContentPlaceHolder>
+<!--Begining of footer-->
+        <footer>
+            <hr />
+            <asp:Table runat="server" GridLines="none" Style="color: #796100; margin-top: 0px;">
+                <asp:TableRow>
+                    <asp:TableCell HorizontalAlign="Left">
+                        <span>
+                            <asp:Image ImageUrl="~/ico_facebook_lg.png" runat="server" ID="fbico" Width="22px" /></span>
+                        <span>
+                            <asp:Image ImageUrl="~/ico-twitter-lg.png" runat="server" ID="twitterico" Width="22px" /></span>
+                        <span>
+                            <asp:Image ImageUrl="~/ico-linkedin-lg.png" runat="server" ID="linkdeedinico" Width="22px" /></span>
+                        <span>
+                            <asp:Image ImageUrl="~/ico-rss-lg.png" runat="server" ID="rssico" Width="22px" /></span>
+
+
+                    </asp:TableCell>
+                    <asp:TableCell HorizontalAlign="Center">
+Psalm 23 : 4 "Yea, though I walk through the valley of the shadow of death,<br /> I will fear no evil for thou art with me" KJV &copy 1996    
+                    </asp:TableCell>
+                    <asp:TableCell HorizontalAlign="left"><img src="youth.JPG" width="99" alt="Could not view picture"/></asp:TableCell>
+                    <asp:TableCell HorizontalAlign="right"><img src="logo.jpg" width="99" alt="Could not view picture" /> </asp:TableCell>
+                </asp:TableRow>
+            </asp:Table>
+        </footer>
+    </form>
+
+</body>
+</html>

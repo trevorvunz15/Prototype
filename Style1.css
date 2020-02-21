@@ -1,0 +1,93 @@
+﻿body {
+    background-color:white ;
+    padding-top: 14px;
+    font-family: 'Century Gothic';
+    
+
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1036;
+    background-color: #796100;
+}
+.signUppage{
+    text-align:center;
+}
+a {
+    text-decoration:none;
+    color:white;
+}
+h4{
+    text-align:center;
+    color:#796100;
+    text-decoration:underline;
+}
+h6{    
+    color:goldenrod;  
+}
+
+button {
+    border: none;
+    color: white;
+    text-decoration: none;
+    background-color:transparent;
+    }
+.tabs {
+    top:0;
+    text-align:center;
+       }
+h2 {
+    margin-top: -33px;
+    text-align: right;
+}
+table{
+    text-align:center;
+    border-style:none;
+    border-color: inherit;
+    border-width: medium;
+    width:100%;
+    border:none;
+}
+footer{
+    bottom:0;
+    left:0;
+}
+
+h1 {
+    color: #396;
+    font-weight: 100;
+    font-size: 40px;
+    margin: 40px 0 20px;
+}
+
+#clockdiv {
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+
+    #clockdiv > div {
+        padding: 10px;
+        border-radius: 3px;
+        background: #00BF96;
+        display: inline-block;
+    }
+
+    #clockdiv div > span {
+        padding: 15px;
+        border-radius: 3px;
+        background: #00816A;
+        display: inline-block;
+    }
+
+smalltext {
+    padding-top: 5px;
+    font-size: 16px;
+} 
